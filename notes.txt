@@ -1,0 +1,35 @@
+"""_summary_
+create python env
+    - python -m venv .venv # the ".venv" is the name of the environment
+        or
+    - py -verison -m venv .venv # the ".venv" is the name of the environment
+    - .\envname\Scripts\Activate.ps1
+
+
+pre-commit commands :  
+    - pip install pre-commit
+    - pre-commit --version
+    - pre-commit install
+
+to config the pre-commit :
+    - create a file .pre-commit-config.yaml
+
+
+pylint commands :
+    - Download pylint extension
+    - pip isntall pylint
+    - pylint --generate-rcfile | out-file -encoding utf8 .pylintrc
+    - pylint filename.sufix
+
+pylint config :
+    - go to the newly created file called .pylintrc
+    - write [MAIN]:
+    disable =
+        C0114, # Missing-module-docstring
+        C0115, # Missing-class-docstring
+        C0116, # Missing-function-docstring
+        W0703, # Catching too general exception Exception
+        C0209, # Consider-using-f-string
+        E0015, # unrecognized-option
+
+"""
