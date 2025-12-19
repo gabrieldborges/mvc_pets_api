@@ -1,6 +1,11 @@
 {
     "files.exclude": {
         "**/.git": true,
+        "**.txt": false,
+        "**.db": true,
+        "**/.gitignore": false,
+        "**/.pylintrc": true,
+        "**/.pre-commit-config.yaml": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
