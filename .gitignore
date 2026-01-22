@@ -182,3 +182,5 @@ cython_debug/
 
 storage.db
 storage(backup).db
+.pytest_cache
+**/__pycache__

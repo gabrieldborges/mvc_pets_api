@@ -2,15 +2,17 @@
     "files.exclude": {
         "**/.git": true,
         "**.txt": false,
-        "**.db": true,
+        "**.db": false,
         "**/.gitignore": false,
-        "**/.pylintrc": true,
+        "**/.pylintrc": false,
         "**/.pre-commit-config.yaml": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/.gitattributes" : true
+        "**/.gitattributes" : true,
+        "**/*.pytest_cache" : true, 
+        "**/*__pycache__" : true
     } ,
 
     "python.linting.enabled": true,
