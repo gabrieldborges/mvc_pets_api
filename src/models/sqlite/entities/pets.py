@@ -1,0 +1,17 @@
+"""sumary"""
+
+from sqlalchemy import Column, String, BIGINT
+from src.models.sqlite.settings.base import Base
+class PetsTable(Base):
+    '''sumary'''
+    def __init__(self) -> None:
+        pass
+
+    __tablename = 'pets'
+
+    id = Column(BIGINT, primary_key=True)
+    name = Column(String, nullable=False)
+    type = Column(String, nullable=False)
+
+    def __repr__(self):
+        return f"{self.__tablename} [name={self.name}, type={self.type}]"

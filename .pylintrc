@@ -1,13 +1,16 @@
 ﻿[MAIN]
 
 disable =
-      # C0114, # Missing-module-docstring
-      # C0115, # Missing-class-docstring
-      # C0116, # Missing-function-docstring
+      C0114, # Missing-module-docstring
+      C0115, # Missing-class-docstring
+      C0116, # Missing-function-docstring
       W0703, # Catching too general exception Exception
       C0209, # Consider-using-f-string
       E0015, # unrecognized-option
+      C0301 , # line too long 
       C0304 , # missing-final-newline 
+      C0303 , # trailing line space 
+      R0903 # too-few-public-methods 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
 # only in one or another interpreter, leading to false positives when analysed.
