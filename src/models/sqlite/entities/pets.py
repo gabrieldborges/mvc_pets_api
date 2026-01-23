@@ -4,8 +4,7 @@ from sqlalchemy import Column, String, BIGINT
 from src.models.sqlite.settings.base import Base
 class PetsTable(Base):
     '''sumary'''
-    def __init__(self) -> None:
-        pass
+    
 
     __tablename__ = 'pets'
 

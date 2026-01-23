@@ -5,6 +5,11 @@ create python env
     - py -verison -m venv .venv # the ".venv" is the name of the environment
     - .\envname\Scripts\Activate.ps1
 
+freeze requirements from venv
+    - Activate venv first: .\venv\Scripts\Activate.ps1 (Windows PowerShell)
+    - Then run: pip freeze > requirements.txt
+    - Or: pip3 freeze > requirements.txt
+
 
 pre-commit commands :  
     - pip install pre-commit
