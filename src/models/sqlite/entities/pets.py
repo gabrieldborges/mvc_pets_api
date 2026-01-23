@@ -7,11 +7,11 @@ class PetsTable(Base):
     def __init__(self) -> None:
         pass
 
-    __tablename = 'pets'
+    __tablename__ = 'pets'
 
     id = Column(BIGINT, primary_key=True)
     name = Column(String, nullable=False)
     type = Column(String, nullable=False)
 
     def __repr__(self):
-        return f"{self.__tablename} [name={self.name}, type={self.type}]"
+        return f"{self.__tablename__} [name={self.name}, type={self.type}]"

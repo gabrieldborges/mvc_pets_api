@@ -8,7 +8,7 @@ class PeopleTable(Base):
     def __init__(self) -> None:
         pass
 
-    __tablename = 'people'
+    __tablename__ = 'people'
 
     id = Column(BIGINT, primary_key=True)
     first_name = Column(String, nullable=False)
@@ -19,4 +19,4 @@ class PeopleTable(Base):
     
     
     def __repr__(self):
-        return f"{self.__tablename} [name={self.first_name},last name={self.last_name} age={self.age}, petID={self.pet_id}]"
+        return f"{self.__tablename__} [name={self.first_name},last name={self.last_name} age={self.age}, petID={self.pet_id}]"
