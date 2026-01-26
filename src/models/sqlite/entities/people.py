@@ -1,5 +1,3 @@
-
-
 from sqlalchemy import Column, String, BIGINT, ForeignKey
 from src.models.sqlite.settings.base import Base
 

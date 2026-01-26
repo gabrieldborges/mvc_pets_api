@@ -2,6 +2,7 @@
 
 from sqlalchemy import Column, String, BIGINT
 from src.models.sqlite.settings.base import Base
+
 class PetsTable(Base):
     '''sumary'''
     
