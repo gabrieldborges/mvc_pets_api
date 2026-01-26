@@ -5,8 +5,7 @@ from src.models.sqlite.settings.base import Base
 
 class PeopleTable(Base):
     '''sumary'''
-    def __init__(self) -> None:
-        pass
+    
 
     __tablename__ = 'people'
 
