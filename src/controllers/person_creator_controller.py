@@ -33,6 +33,6 @@ class PersonCreatorController():
             "data": {
                 "type" : "Person",
                 "count" : 1 ,
-                "attibutes" : person_info
+                "attributes" : person_info
             }
         }
