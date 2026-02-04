@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "**/.git": true,
-        "**.txt": true,
+        "**.txt": false,
         "**.db": true,
         "**/.gitignore": true,
         "**/.pylintrc": true,
