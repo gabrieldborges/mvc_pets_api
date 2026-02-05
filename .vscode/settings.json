@@ -2,8 +2,8 @@
     "files.exclude": {
         "**/.git": true,
         "**.txt": false,
-        "**.db": true,
-        "**/.gitignore": true,
+        "**.db": false,
+        "**/.gitignore": false,
         "**/.pylintrc": false,
         "**/.pre-commit-config.yaml": true,
         "**/.svn": true,
