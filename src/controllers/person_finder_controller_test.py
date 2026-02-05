@@ -8,6 +8,7 @@ class MockPerson:
         self.last_name = last_name
         self.pet_name = pet_name
         self.pet_type = pet_type
+        self.id = 1
 
 
 class MockPeopleRepository:
@@ -25,13 +26,14 @@ def test_find_person_not_found():
         PersonFinderController(MockPeopleRepositoryPersonNotFound()).find(person_id)
 
 def test_find_person_found():
-    person_id = 1 
+    person_id = 1
 
     person = PersonFinderController(MockPeopleRepository()).find(person_id)
 
     assert person["data"]["type"] == "Person"
     assert person["data"]["count"] == 1
     assert person["data"]["attributes"] == {
+        "id": person_id,
         "first_name" : "John",
         "last_name" : "Doe",
         "pet_name" : "Buddy",

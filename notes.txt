@@ -1,3 +1,5 @@
+Study notes
+
 """_summary_
 create python env
     - python -m venv .venv # the ".venv" is the name of the environment

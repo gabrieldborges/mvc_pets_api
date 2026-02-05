@@ -17,7 +17,8 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         pet_id = person_info["pet_id"]
 
         self.__validate_first_and_last_name(first_name,last_name)
-        self.__insert_person_in_database(first_name, last_name, age, pet_id)
+        inserted_person_id = self.__insert_person_in_database(first_name, last_name, age, pet_id)
+        person_info["id"] = inserted_person_id
         formated_response = self.__format_response(person_info)
         return formated_response
 
@@ -29,9 +30,10 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         if non_valid_characters.search(first_name) or non_valid_characters.search(last_name):
             raise HttpBadRequestError("Invalid name format.")
 
-    def __insert_person_in_database(self, first_name:str, last_name:str, age:int, pet_id:int) -> None:
-        self.__people_repository.insert_person(first_name, last_name, age, pet_id)
-
+    def __insert_person_in_database(self, first_name:str, last_name:str, age:int, pet_id:int) -> int:
+        inserted_person_id = self.__people_repository.insert_person(first_name, last_name, age, pet_id)
+        return inserted_person_id
+        
     def __format_response(self , person_info : Dict) -> Dict:
         return {
             "data": {
