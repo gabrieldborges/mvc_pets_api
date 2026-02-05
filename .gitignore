@@ -180,7 +180,6 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-storage.db
 storage(backup).db
 .pytest_cache
 **/__pycache__
