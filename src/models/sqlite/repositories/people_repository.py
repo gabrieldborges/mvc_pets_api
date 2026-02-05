@@ -27,6 +27,7 @@ class PeopleRepository(PeopleRepositoryInterface):
                     .outerjoin(PetsTable, PetsTable.id == PeopleTable.pet_id)
                     .filter(PeopleTable.id == person_id)
                     .with_entities(
+                        PeopleTable.id,
                         PeopleTable.first_name,
                         PeopleTable.last_name,
                         PetsTable.name.label("pet_name"),
