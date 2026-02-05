@@ -13,6 +13,7 @@ disable =
       R0903 , # too-few-public-methods 
       C0305 , # Trailing newlines (trailing-newlines)
       W0719 , # broad-exception-raised
+      W0707 , # raise-missing-from
 
       
 # Analyse import fallback blocks. This can be used to support both Python 2 and
